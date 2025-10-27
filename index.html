@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Владлена Владимировна — психолог | Караганда</title>
+  <meta name="description" content="Владлена Владимировна — психолог. Онлайн и офлайн консультации в Караганде. Работа с тревожностью, самооценкой, отношениями и прочим." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#7db4a6; /* soft green */
+      --accent-2:#5c9f8a;
+      --glass: rgba(255,255,255,0.7);
+      --radius:16px;
+      --max-w:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial; margin:0; background:linear-gradient(180deg,var(--bg),#ffffff 60%); color:#0f172a; -webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-w); margin:32px auto; padding:24px}
+
+    header{display:grid; grid-template-columns:1fr 320px; gap:24px; align-items:center}
+    .hero{background:var(--card); border-radius:var(--radius); padding:28px; box-shadow:0 10px 30px rgba(16,24,40,0.06)}
+    .hero h1{margin:0; font-size:28px}
+    .hero p.lead{color:var(--muted); margin-top:12px; line-height:1.5}
+    .cta{display:flex; gap:12px; margin-top:18px}
+    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:white; padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:600}
+    .btn.secondary{background:transparent; border:1px solid rgba(15,23,42,0.06); color:var(--muted)}
+
+    .photo-card{background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6)); border-radius:18px; padding:18px; text-align:center; box-shadow:0 8px 24px rgba(16,24,40,0.06)}
+    .photo{width:100%; border-radius:12px; display:block}
+    .contact{margin-top:14px}
+    .contact a{display:inline-block; margin:6px 6px 0 0; color:var(--accent-2); text-decoration:none; font-weight:600}
+
+    main{margin-top:28px}
+    .grid{display:grid; grid-template-columns:1fr 360px; gap:24px}
+    .card{background:var(--card); border-radius:14px; padding:20px; box-shadow:0 8px 20px rgba(16,24,40,0.04)}
+    h2{margin:0 0 12px 0}
+    .services ul{list-style:none; padding:0; margin:0; display:grid; gap:10px}
+    .service{padding:12px; border-radius:10px; background:linear-gradient(180deg,#fbfffd,#f7fff9); border:1px solid rgba(92,159,138,0.08)}
+
+    .testimonials{display:grid; gap:12px}
+    .test{background:linear-gradient(180deg,#ffffff,#fbfbff); padding:14px; border-radius:10px}
+    .meta{display:flex; gap:12px; align-items:center}
+    .avatar{width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:white; display:flex; align-items:center; justify-content:center; font-weight:700}
+
+    .contact-form label{display:block; font-size:13px; color:var(--muted); margin-bottom:6px}
+    .contact-form input, .contact-form textarea{width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6eef0; background:transparent; margin-bottom:12px; font-size:15px}
+    .contact-form .small{font-size:13px; color:var(--muted)}
+
+    footer{margin-top:26px; text-align:center; color:var(--muted); font-size:14px}
+
+    /* responsive */
+    @media (max-width:900px){
+      header{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .photo-card{order:-1}
+    }
+
+    /* subtle animations */
+    .fade{opacity:0; transform:translateY(8px); animation:fadeIn .6s forwards}
+    @keyframes fadeIn{to{opacity:1; transform:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="fade">
+      <div class="hero">
+        <h1>Владлена Владимировна — психолог (г. Караганда)</h1>
+        <p class="lead">Добро пожаловать. Я помогаю людям справляться с тревогой, стрессом, семейными конфликтами и находить внутренние ресурсы для спокойной и гармоничной жизни. Онлайн и очные консультации.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Записаться на консультацию</a>
+          <a class="btn secondary" href="#services">Услуги</a>
+        </div>
+        <div style="margin-top:18px; display:flex; gap:12px; align-items:center; color:var(--muted)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6z" stroke="#7db4a6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <div style="font-weight:600">Приём в Караганде</div>
+            <a href="tel:+79097803090" style="color:var(--accent-2); text-decoration:none; font-weight:700">+7 909 780 30 90</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="photo-card">
+        <img class="photo" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c6a8b3dcb9f3b4f5f8f6a8d5b7c9e5a" alt="Портрет психолога">
+        <div class="contact" style="margin-top:12px">
+          <div style="font-weight:700">Владлена Владимировна</div>
+          <div style="color:var(--muted); font-size:14px; margin-top:6px">Универсальный психолог — индивидуальные и семейные консультации</div>
+          <div style="margin-top:10px">
+            <a href="tel:+79097803090">📞 +7 909 780 30 90</a><br>
+            <a href="mailto:info@example.com">✉️ info@example.com</a>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <main class="fade" style="animation-delay:.1s">
+      <div class="grid">
+        <section>
+          <div class="card">
+            <h2 id="about">Обо мне</h2>
+            <p style="color:var(--muted); line-height:1.6">Я — Владлена Владимировна, практикующий психолог с опытом работы со взрослыми и подростками. Провожу индивидуальные, семейные и парные консультации. В работе использую элементы когнитивно-поведенческой терапии, элементы системной терапии и практики осознанности. Моя цель — помочь вам вернуть контроль над эмоциями и наладить отношения с собой и близкими.</p>
+            <ul style="margin-top:12px; color:var(--muted); line-height:1.6">
+              <li>Опыт работы: 7+ лет</li>
+              <li>Формат приёма: онлайн и офлайн (Караганда)</li>
+              <li>Длительность консультации: 50 минут</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:14px" id="services">
+            <h2>Услуги</h2>
+            <div class="services">
+              <ul>
+                <li class="service">Индивидуальные консультации — тревога, депрессия, выгорание</li>
+                <li class="service">Семейная и парная терапия — коммуникации, конфликты</li>
+                <li class="service">Работа с самооценкой и ресурсами</li>
+                <li class="service">Поддержка при жизненных переходах и кризисах</li>
+                <li class="service">Детско‑родительские консультации (основы)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h2>Отзывы</h2>
+            <div class="testimonials">
+              <div class="test">
+                <div class="meta">
+                  <div class="avatar">А</div>
+                  <div>
+                    <div style="font-weight:700">Алексей, 34</div>
+                    <div style="color:var(--muted); font-size:13px">Караганда</div>
+                  </div>
+                </div>
+                <p style="margin-top:10px; color:var(--muted)">После нескольких сессий я стал спокойнее реагировать на рабочие стрессы. Очень благодарен Владлене Владимировне за практические техники.</p>
+              </div>
+
+              <div class="test">
+                <div class="meta">
+                  <div class="avatar">Н</div>
+                  <div>
+                    <div style="font-weight:700">Наталья, 28</div>
+                    <div style="color:var(--muted); font-size:13px">Онлайн</div>
+                  </div>
+                </div>
+                <p style="margin-top:10px; color:var(--muted)">Чувствовала поддержку и ясность. Рекомендую для тех, кто хочет работать над отношениями и самооценкой.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside>
+          <div class="card contact-card" id="contact">
+            <h2>Контакты и запись</h2>
+            <p style="color:var(--muted); margin-bottom:8px">Запись на консультацию — удобным для вас способом: звонок, сообщение в мессенджер или форма ниже.</p>
+            <div style="margin-bottom:10px">
+              <strong>Город:</strong> Караганда<br>
+              <strong>Телефон:</strong> <a href="tel:+79097803090">+7 909 780 30 90</a><br>
+              <strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a>
+            </div>
+
+            <form class="contact-form" onsubmit="return handleSubmit(event)">
+              <label for="name">Ваше имя</label>
+              <input id="name" name="name" required placeholder="Иван">
+
+              <label for="phone">Телефон или email</label>
+              <input id="phone" name="phone" required placeholder="+7 7.. или email@example.com">
+
+              <label for="note">Коротко о запросе</label>
+              <textarea id="note" name="note" rows="4" placeholder="Причина обращения (тревога, отношения и т.д.)"></textarea>
+
+              <div style="display:flex; gap:8px; align-items:center">
+                <button class="btn" type="submit">Отправить заявку</button>
+                <a class="btn secondary" href="tel:+79097803090">Позвонить</a>
+              </div>
+              <p class="small" style="margin-top:10px">Нажимая «Отправить заявку», вы соглашаетесь на обработку персональных данных.</p>
+            </form>
+
+            <script>
+              function handleSubmit(e){
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const note = document.getElementById('note').value.trim();
+                // Имитация отправки — можно заменить на реальный POST к вашему серверу или интеграцию с Google Forms
+                alert('Заявка отправлена!\\n' + name + ' | ' + phone + '\\nСообщение: ' + (note||'-'));
+                e.target.reset();
+                return false;
+              }
+            </script>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3>Часто задают</h3>
+            <details style="margin-top:8px"><summary style="cursor:pointer">Как проходит первая консультация?</summary>
+              <div style="color:var(--muted); margin-top:8px">Первая встреча — знакомство, обсуждаем запрос и формируем план работы на ближайшие сессии. Длительность 50 минут.</div>
+            </details>
+            <details style="margin-top:8px"><summary style="cursor:pointer">Можно ли консультация онлайн?</summary>
+              <div style="color:var(--muted); margin-top:8px">Да — работаю по видеосвязи (Zoom, Telegram) и по телефону.</div>
+            </details>
+          </div>
+
+        </aside>
+      </div>
+
+      <footer>
+        © <strong>Владлена Владимировна</strong> — психолог. Телефон: <a href="tel:+79097803090">+7 909 780 30 90</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
+
